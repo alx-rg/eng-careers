@@ -1,5 +1,13 @@
 def add_digits(num)
 
+# The question is asking us for the DIGITAL ROOT which is a single-digit value obtained by repeatedly summing the digits of the number until a single-digit number is reached.
+
+# For example, let's find the digital root of the number 2822:
+
+# Add digits of the number 2 + 8 + 2 + 2 = 14
+# Since 14 is nto a single digit number, repeat 1 + 4 = 5
+# The digital root of 2822 is 5
+
   if num > 0
     # take the number and substract 1. Why you ask?
     # when num is not dividible by 9, subtracting 1 won't affect the calculation
