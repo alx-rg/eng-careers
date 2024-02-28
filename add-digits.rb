@@ -55,7 +55,8 @@ def add_digits(num)
   # return new_digits
 end
 
-puts add_digits(44333)
-puts add_digits(4)
-puts add_digits(0)
-puts add_digits(17)
+puts 3 % 10
+# puts add_digits(44333)
+# puts add_digits(4)
+# puts add_digits(0)
+# puts add_digits(17)

@@ -60,10 +60,11 @@ def two_sum(nums, target)
     #   5 => 1
     # }
   end
+  puts num_indices
   # If no solution is found after iterating through the entire array, return 'nil'
   return nil
 end
 
 
 
-puts two_sum([3,5,12,2,11,15], 9)
+puts two_sum([3,5,7,12,11,15,5,2], 9)
