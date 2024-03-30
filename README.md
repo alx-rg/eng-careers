@@ -7,6 +7,7 @@
 ### Array / String
 
 151. [Reverse Words in a String](https://leetcode.com/problems/reverse-words-in-a-string/description)
+345. [Reverse Vowels of a String](https://leetcode.com/problems/reverse-vowels-of-a-string/description/)
 605. [Can Place Flowers](https://leetcode.com/problems/can-place-flowers/description)
 1071. [Greatest Common Divisor of Strings](https://leetcode.com/problems/greatest-common-divisor-of-strings/description/)
 1207.  [Unique Number of Occurrences](https://leetcode.com/problems/unique-number-of-occurrences/description/)
