@@ -18,6 +18,10 @@
 206. [Reverse Linked List](https://leetcode.com/problems/reverse-linked-list/description)
 234. [Palindrome Linked List](https://leetcode.com/problems/palindrome-linked-list/description/)
 
+### Hash Map
 
+383. [Ransom Note](https://leetcode.com/problems/ransom-note/description/)
 
+### Binary Search
 
+875. [Koko Eating Bananas](https://leetcode.com/problems/koko-eating-bananas/description/)
