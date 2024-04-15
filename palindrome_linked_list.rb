@@ -36,20 +36,33 @@
 # @param {ListNode} head
 # @return {Boolean}
 def is_palindrome(head)
-  current = head
-  arrayValues = []
-  while current != nil
-      arrayValues << current.val
-      current = current.next
-  end
-  halfarray = (arrayValues.length / 2)
-  (0..halfarray).each do |index|
-      if arrayValues[index] != arrayValues[(-index)-1]
-          return false
-      end
-  end
+   # Initialize a variable to traverse the linked list starting from the head
+   current = head
 
-  return true
+   # Initialize an empty array to store the values of each node in the linked list
+   arrayValues = []
+
+   # Traverse the linked list and store the values of each node in the array
+   while current != nil
+     arrayValues << current.val
+     current = current.next
+   end
+
+   # Calculate the halfway point of the array
+   halfarray = (arrayValues.length / 2)
+
+   # Iterate through the first half of the array
+   (0..halfarray).each do |index|
+     # Check if the value at the current index is not equal to its corresponding value
+     # from the second half of the array
+     if arrayValues[index] != arrayValues[(-index)-1]
+       # If they are not equal, return false since it's not a palindrome
+       return false
+     end
+   end
+
+   # If the loop completes without finding any inequality, return true since it's a palindrome
+   return true
 end
 
 head = [1,2,2,1]

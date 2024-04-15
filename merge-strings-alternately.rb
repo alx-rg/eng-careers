@@ -40,23 +40,34 @@
 # @return {String}
 def merge_alternately(word1, word2)
 
-  result = ""
-  pairs = word1.chars.zip(word2.chars)
-  chars = pairs.flatten
-  result = chars.join
+   # Initialize an empty string to store the merged result
+   result = ""
 
-  if result.empty?
-      puts "result is empty"
-  else
-      puts "result is not empty"
-  end
+   # Zip the characters of word1 and word2 into pairs
+   pairs = word1.chars.zip(word2.chars)
 
-  if word1.length > word2.length
-      result += word1[result.length..-1].to_s
-  elsif word2.length > word1.length
-      result += word2[word1.length..-1].to_s
-  end
-  return result
+   # Flatten the pairs into a single array of characters
+   chars = pairs.flatten
+
+   # Join the characters together to form the merged string
+   result = chars.join
+
+   # Check if the merged result is empty
+   if result.empty?
+     puts "result is empty"
+   else
+     puts "result is not empty"
+   end
+
+   # Append the remaining characters from the longer word to the merged result
+   if word1.length > word2.length
+     result += word1[result.length..-1].to_s
+   elsif word2.length > word1.length
+     result += word2[word1.length..-1].to_s
+   end
+
+   # Return the merged result
+   return result
 
   # newWord = ""
   # word1a = word1.split("")

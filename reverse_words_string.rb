@@ -35,7 +35,12 @@
 # @param {String} s
 # @return {String}
 def reverse_words(s)
+  # Split the input string into an array of words using space as the delimiter
+  # Reverse the order of the words in the array
+  # Join the reversed words array into a single string using space as the separator
+  # then Return the reversed string (s)
   s.split(" ").reverse.join(" ")
+
 
   # splitArray = s.split(" ")
   # reverseArray = splitArray.reverse.join(" ")

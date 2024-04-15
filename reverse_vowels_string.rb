@@ -72,4 +72,30 @@ def reverse_vowels(s)
 
 #     return s
 
+    # or this approach is better yet
+
+    # def reverse_vowels(s)
+    #   vowels = "aeiouAEIOU"
+    #   left = 0
+    #   right = s.length - 1
+
+    #   while left < right
+    #       while left < right && !vowels.include?(s[left])
+    #           left += 1
+    #       end
+
+    #       while left < right && !vowels.include?(s[right])
+    #           right -= 1
+    #       end
+
+    #       if left < right
+    #           s[left], s[right] = s[right], s[left]
+    #           left += 1
+    #           right -= 1
+    #       end
+    #   end
+
+    #   s
+end
+
 end

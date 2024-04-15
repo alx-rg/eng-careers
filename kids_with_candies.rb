@@ -38,8 +38,16 @@
 # @param {Integer} extra_candies
 # @return {Boolean[]}
 def kids_with_candies(candies, extra_candies)
-  m = candies.max - extra_candies
-  return candies.map { |x| x >= m }
+  # Calculate the maximum number of candies among all kids
+  max_candies = candies.max
+
+  # Subtract the extra candies from the maximum number of candies to find
+  # the threshold below which a kid won't have the greatest number of candies
+  threshold = max_candies - extra_candies
+
+  # Map through each kid's candies, and check if adding the extra candies
+  # would make them have the greatest number of candies
+  return candies.map { |kid_candies| kid_candies + extra_candies >= max_candies }
 
   # max_candies = candies.max
   # result = []

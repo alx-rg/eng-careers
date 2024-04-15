@@ -29,14 +29,20 @@ class Solution(object):
         :type arr: List[int]
         :rtype: bool
         """
+        # Initialize an empty dictionary to store the count of occurrences for each number
         count = {}
 
+        # Iterate through the input array
         for number in arr:
+            # If the number is already in the dictionary, increment its count
             if number in count:
                 count[number] += 1
+            # If the number is not in the dictionary, add it with a count of 1
             else:
                 count[number] = 1
 
+        # Check if the number of unique counts is equal to the total number of counts
+        # If they are equal, it means each number has a unique count of occurrences
         return len(set(count.values())) == len(count.values())
 
     arr = [1,2,2,1,1,3]

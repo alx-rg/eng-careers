@@ -40,15 +40,27 @@
 # @param {ListNode} head
 # @return {ListNode}
 def reverse_list(head)
+  # Initialize three pointers: current, previous, and nextNode
   current = head
   previous = nil
   nextNode = nil
+
+  # Traverse the linked list
   while current != nil
-      nextNode = current.next
-      current.next = previous
-      previous = current
-      current = nextNode
+    # Store the next node to be processed
+    nextNode = current.next
+
+    # Reverse the current node's pointer to the previous node
+    current.next = previous
+
+    # Move previous to the current node
+    previous = current
+
+    # Move current to the next node
+    current = nextNode
   end
+
+  # After traversing, previous will be pointing to the last node, which will be the new head
   return previous
 end
 
