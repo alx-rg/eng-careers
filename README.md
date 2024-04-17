@@ -1,5 +1,7 @@
 
-Code Practice Question and Solutions with Comments
+Code Practice Questions with links back to leetcode.com.
+
+The solutions and comments for each problem are found above ^^^ each named according to the numbers below.
 
 ### Math
 
