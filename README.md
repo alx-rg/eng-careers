@@ -16,6 +16,10 @@ Code Practice Question and Solutions with Comments
 1431. [Kids With the Greatest Number of Candies](https://leetcode.com/problems/kids-with-the-greatest-number-of-candies/description)
 1768. [Merge Strings Alternately](https://leetcode.com/problems/merge-strings-alternately/description)
 
+### Two Pointers
+
+27. [Remove Element](https://leetcode.com/problems/remove-element/)
+
 ### Linked List
 206. [Reverse Linked List](https://leetcode.com/problems/reverse-linked-list/description)
 234. [Palindrome Linked List](https://leetcode.com/problems/palindrome-linked-list/description/)
@@ -26,4 +30,13 @@ Code Practice Question and Solutions with Comments
 
 ### Binary Search
 
+374. [Guess Number Higher or Lower](https://leetcode.com/problems/guess-number-higher-or-lower/description)
 875. [Koko Eating Bananas](https://leetcode.com/problems/koko-eating-bananas/description/)
+
+### DP - 1D
+
+70. [Climbing Stairs](https://leetcode.com/problems/climbing-stairs/description/)
+
+### Bit Manipulation
+
+191. [Number of 1 Bits](https://leetcode.com/problems/number-of-1-bits/description/)
